@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -17,6 +21,12 @@
       color: white;
       padding: 20px;
       text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      margin: 0;
+      font-size: 2rem;
     }
 
     nav {
@@ -31,12 +41,14 @@
       gap: 20px;
       margin: 0;
       padding: 0;
+      flex-wrap: wrap; /* clave para responsive */
     }
 
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 0.95rem;
     }
 
     nav a:hover {
@@ -44,16 +56,12 @@
     }
 
     .container {
-      padding: 30px;
+      padding: 20px;
       max-width: 1000px;
       margin: auto;
       background-color: white;
     }
 
-    h1 {
-      color: #white;
-    }
-    
     h2 {
       color: #0d6efd;
     }
@@ -61,11 +69,12 @@
     .boton {
       display: inline-block;
       margin-top: 15px;
-      padding: 10px 20px;
+      padding: 12px 20px;
       background-color: #0d6efd;
       color: white;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 0.95rem;
     }
 
     .boton:hover {
@@ -78,14 +87,43 @@
       text-align: center;
       padding: 15px;
       margin-top: 30px;
+      font-size: 0.9rem;
     }
+
+    /* 📱 Responsive para celulares */
+    @media (max-width: 600px) {
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .boton {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>💻 Profesorado en TIC 👨🏻‍🏫</h1>
+  <h1>💻 Profesorado en TIC</h1>
   <p>🚀 Formate como docente en tecnología y educación digital</p>
 </header>
 
@@ -104,7 +142,7 @@
 
   <h2>📌 ¿Qué es el Profesorado en TIC?</h2>
   <p>
-    El Profesorado de Educación Secundaria en Tecnologías de la Información y la Comunicación, forma docentes capaces 
+    El profesorado en Tecnologías de la Información y la Comunicación forma docentes capaces 
     de integrar herramientas digitales en el aula, promoviendo una educación innovadora, crítica y responsable.
   </p>
 
@@ -117,7 +155,7 @@
     <li>📊 Diseño de clases con tecnología</li>
   </ul>
 
-  <h2>👤 Perfil del Egresado 👩🏻‍🏫👨🏻‍🏫👩🏻‍🎓</h2>
+  <h2>👤 Perfil del egresado</h2>
   <p>
     El egresado será un docente capacitado para integrar tecnologías en diferentes niveles educativos,
     promoviendo el uso crítico, creativo y responsable de las TIC en el ámbito escolar.
@@ -125,7 +163,7 @@
 
   <h2>🏫 ¿Dónde podés trabajar?</h2>
   <ul>
-    <li>📚 Escuelas primarias y secundarias de todo el país</li>
+    <li>📚 Escuelas primarias y secundarias</li>
     <li>🏢 Instituciones educativas</li>
     <li>🎓 Capacitaciones tecnológicas</li>
     <li>💡 Proyectos educativos digitales</li>
